@@ -1,1 +1,114 @@
+.App {
+  max-width: 1200px;
+  margin: 60px auto;
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: #016a87;
+}
 
+.bg-light {
+  margin: 20px;
+  width: 500px;
+}
+
+.d-flex {
+  width: 800px;
+}
+
+.search-engine {
+  margin: 20px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.box {
+  background: #385170;
+}
+.btn-outline-success:hover {
+  background-color: #a5c6d8;
+}
+
+ul {
+  list-style: none;
+}
+
+.city {
+  color: darkcyan;
+  font-size: 40px;
+}
+.date {
+  color: cadetblue;
+  font-size: 25px;
+}
+.description {
+  color: cadetblue;
+  font-size: 25px;
+}
+.time {
+  color: cadetblue;
+  font-size: 25px;
+}
+.temperature-number {
+  color: darkcyan;
+  font-size: 80px;
+}
+.temperature {
+  color: darkcyan;
+  padding-bottom: 30px;
+}
+
+.units {
+  position: relative;
+  top: -45px;
+}
+
+.row {
+  padding-bottom: 30px;
+}
+
+.card {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #f0fbf3;
+  border-radius: 40px;
+}
+.fa-sun {
+  margin: 0 auto;
+  font-size: 50px;
+  color: #385170;
+}
+.fa-cloud-sun-rain {
+  margin: 0 auto;
+  font-size: 50px;
+  color: #385170;
+}
+.fa-cloud-sun {
+  margin: 0 auto;
+  font-size: 50px;
+  color: #385170;
+}
+#day-1 {
+  position: relative;
+  left: 10px;
+}
+#day-2 {
+  position: relative;
+  left: -10px;
+}
+#day-3 {
+  position: relative;
+  left: -20px;
+}
+#day-4 {
+  position: relative;
+  left: -30px;
+}
+#day-5 {
+  position: relative;
+  left: -40px;
+}

@@ -11,11 +11,115 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/18b976e585.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
-    <div class="container">
+  <html>
+    <body>
+      <div class="App">
+        <div container="row">
+          <form class="d-flex">
+            <div class="col-9 search-engine">
+              <input
+                type="search"
+                placeholder="Enter the name of the city"
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 search-box">
+              <input type="submit" class="btn btn-primary box" value="Search" />
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li class="city" id="city">Ponce, Puerto Rico</li>
+              <li class="date" id="date">Friday, June 18</li>
+              <li class="description" id="description">Cloudy</li>
+              <li class="description">
+                <span>Humidity: %,</span>
+                <span>Wind: %</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 temperature">
+            <span class="temperature-number" id="temperature">81 </span>
+            <span class="units"> °C </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2" id="day-1">
+            <div class="card" style="width: 10rem">
+              <i class="far fa-sun"></i>
+              <div class="card-body">
+                <p class="card-text">
+                  Saturday
+                  <br />
+                  87° / 76°
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2" id="day-2">
+            <div class="card" style="width: 10rem">
+              <i class="far fa-sun"></i>
+              <div class="card-body">
+                <p class="card-text">
+                  Sunday
+                  <br />
+                  88° / 76°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2" id="day-3">
+            <div class="card" style="width: 10rem">
+              <i class="far fa-sun"></i>
+              <div class="card-body">
+                <p class="card-text">
+                  Monday
+                  <br />
+                  89° / 77°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2" id="day-4">
+            <div class="card" style="width: 10rem">
+              <i class="fas fa-cloud-sun-rain"></i>
+              <div class="card-body">
+                <p class="card-text">
+                  Tuesday
+                  <br />
+                  89° / 76°
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2" id="day-5">
+            <div class="card" style="width: 10rem">
+              <i class="fas fa-cloud-sun"></i>
+              <div class="card-body">
+                <p class="card-text">
+                  Wednesday
+                  <br />
+                  89° / 77°
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="src/app.js"></script>
-    </div>
-  </body>
+    </body>
+    <a href="" target="_blank" class="githubLink"
+      >Open-source code by Aimée Romero</a
+    >
+  </html>
 </html>
