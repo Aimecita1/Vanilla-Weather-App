@@ -19,7 +19,7 @@
   </head>
   <html>
     <body>
-      <div class="App">
+      <div class="weather-app">
         <div container="row">
           <form class="d-flex">
             <div class="col-9 search-engine">
@@ -40,15 +40,17 @@
               <li class="city" id="city">Ponce, Puerto Rico</li>
               <li class="date" id="date">Friday, June 18</li>
               <li class="description" id="description">Cloudy</li>
-              <li class="description">
-                <span>Humidity: %,</span>
-                <span>Wind: %</span>
-              </li>
             </ul>
           </div>
           <div class="col-6 temperature">
-            <span class="temperature-number" id="temperature">81 </span>
-            <span class="units"> °C </span>
+            <ul>
+              <li>
+                <span class="temperature-number" id="temperature">81 </span>
+                <span class="units"> °F </span>
+              </li>
+              <li>Humidity: 60%</li>
+              <li>Wind: 4%</li>
+            </ul>
           </div>
         </div>
 
@@ -118,8 +120,12 @@
       </div>
       <script src="src/app.js"></script>
     </body>
-    <a href="" target="_blank" class="githubLink"
-      >Open-source code by Aimée Romero</a
+    <a
+      href="https://github.com/Aimecita1/Vanilla-Weather-App"
+      target="_blank"
+      class="githubLink"
+      >Open-source code</a
     >
+    by Aimée Romero
   </html>
 </html>
