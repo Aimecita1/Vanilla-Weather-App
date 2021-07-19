@@ -1,6 +1,9 @@
-.weather-app {
+.weather-app-wrapper {
   max-width: 950px;
   margin: 60px auto;
+}
+
+.weather-app {
   border-style: solid;
   border-width: 3px;
   border-left-width: 3px;
@@ -116,7 +119,10 @@ ul {
   position: relative;
   left: 120px;
 }
+
+small {
+  margin-top: 100px;
+}
 a {
-  margin-left: 50px;
   color: #385170;
 }
