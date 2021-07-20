@@ -37,6 +37,10 @@
   border-color: #385170;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 ul {
   list-style: none;
 }
