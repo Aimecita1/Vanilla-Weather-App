@@ -75,6 +75,7 @@ ul {
   position: relative;
   top: -45px;
   font-size: 20px;
+  color: darkcyan;
 }
 .icon {
   position: relative;
@@ -82,6 +83,7 @@ ul {
   top: -10px;
   width: 200px;
 }
+
 .celsius {
   cursor: default;
   text-decoration: none;
@@ -91,6 +93,14 @@ ul {
   cursor: default;
   text-decoration: none;
   color: darkcyan;
+}
+
+.active {
+  cursor: default;
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 small {
