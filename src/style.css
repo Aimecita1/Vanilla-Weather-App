@@ -82,56 +82,20 @@ ul {
   top: -10px;
   width: 200px;
 }
-.row {
-  padding-bottom: 30px;
+.celsius {
+  cursor: default;
+  text-decoration: none;
+  color: darkcyan;
 }
-
-.card {
-  margin: 0 auto;
-  padding-top: 30px;
-  text-align: center;
-  background-color: #f0fbf3;
-  border-radius: 40px;
-}
-.fa-sun {
-  margin: 0 auto;
-  font-size: 50px;
-  color: #385170;
-}
-.fa-cloud-sun-rain {
-  margin: 0 auto;
-  font-size: 50px;
-  color: #385170;
-}
-.fa-cloud-sun {
-  margin: 0 auto;
-  font-size: 50px;
-  color: #385170;
-}
-#day-1 {
-  position: relative;
-  left: 20px;
-}
-#day-2 {
-  position: relative;
-  left: 45px;
-}
-#day-3 {
-  position: relative;
-  left: 70px;
-}
-#day-4 {
-  position: relative;
-  left: 95px;
-}
-#day-5 {
-  position: relative;
-  left: 120px;
+.fahrenheit {
+  cursor: default;
+  text-decoration: none;
+  color: darkcyan;
 }
 
 small {
   margin-top: 100px;
 }
-a {
+.githubLink {
   color: #385170;
 }

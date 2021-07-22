@@ -20,126 +20,74 @@
   </head>
   <html>
     <body>
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <div container="row">
-            <form class="d-flex" id="city-form">
-              <div class="col-9 search-engine">
-                <input
-                  type="search"
-                  placeholder="Enter the name of the city"
-                  class="form-control search-input"
-                  id="search-city"
-                />
-              </div>
-              <div class="col-3 search-box">
-                <input
-                  type="submit"
-                  class="btn btn-primary box"
-                  value="Search"
-                  id="search-button"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <ul>
-                <li class="city" id="city">Ponce, Puerto Rico</li>
-                <li class="date">
-                  Last updated: <span id="date">Friday June 18</span>
-                </li>
-                <li class="description" id="description">Cloudy</li>
-              </ul>
-            </div>
-            <div class="col-3 temperature">
-              <ul>
-                <li>
-                  <span class="temperature-number" id="temperature">81 </span>
-                  <span class="units"> °C </span>
-                </li>
-                <li>Humidity: <span id="humidity"> 73</span><span>%</span></li>
-                <li>Wind: <span id="wind"> 2 </span> <span>Km/Hr</span></li>
-              </ul>
-            </div>
-            <div class="col-3 icon">
-              <img src="" alt="" class="icon" id="icon" />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-2" id="day-1">
-              <div class="card" style="width: 10rem">
-                <i class="far fa-sun"></i>
-                <div class="card-body">
-                  <p class="card-text">
-                    Saturday
-                    <br />
-                    87° / 76°
-                  </p>
+      <div class="container">
+        <div class="weather-app-wrapper">
+          <div class="weather-app">
+            <div class="row">
+              <form class="d-flex" id="city-form">
+                <div class="col-9 search-engine">
+                  <input
+                    type="search"
+                    placeholder="Enter the name of the city"
+                    class="form-control search-input"
+                    id="search-city"
+                  />
                 </div>
-              </div>
-            </div>
-
-            <div class="col-2" id="day-2">
-              <div class="card" style="width: 10rem">
-                <i class="far fa-sun"></i>
-                <div class="card-body">
-                  <p class="card-text">
-                    Sunday
-                    <br />
-                    88° / 76°
-                  </p>
+                <div class="col-3 search-box">
+                  <input
+                    type="submit"
+                    class="btn btn-primary box"
+                    value="Search"
+                    id="search-button"
+                  />
                 </div>
-              </div>
+              </form>
             </div>
-            <div class="col-2" id="day-3">
-              <div class="card" style="width: 10rem">
-                <i class="far fa-sun"></i>
-                <div class="card-body">
-                  <p class="card-text">
-                    Monday
-                    <br />
-                    89° / 77°
-                  </p>
-                </div>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li class="city" id="city">Ponce, Puerto Rico</li>
+                  <li class="date">
+                    Last updated: <span id="date">Friday June 18</span>
+                  </li>
+                  <li class="description" id="description">Cloudy</li>
+                </ul>
               </div>
-            </div>
-            <div class="col-2" id="day-4">
-              <div class="card" style="width: 10rem">
-                <i class="fas fa-cloud-sun-rain"></i>
-                <div class="card-body">
-                  <p class="card-text">
-                    Tuesday
-                    <br />
-                    89° / 76°
-                  </p>
-                </div>
+              <div class="col-3 temperature">
+                <ul>
+                  <li>
+                    <span class="temperature-number" id="temperature"></span>
+                    <span class="units">
+                      <a href="#" id="celsius-link" class="active celsius"
+                        >C°</a
+                      >
+                      |
+                      <a href="#" id="fahrenheit-link" class="fahrenheit"
+                        >F°</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    Humidity: <span id="humidity"> 73</span><span>%</span>
+                  </li>
+                  <li>Wind: <span id="wind"> 2 </span> <span>Km/Hr</span></li>
+                </ul>
               </div>
-            </div>
-            <div class="col-2" id="day-5">
-              <div class="card" style="width: 10rem">
-                <i class="fas fa-cloud-sun"></i>
-                <div class="card-body">
-                  <p class="card-text">
-                    Wednesday
-                    <br />
-                    89° / 77°
-                  </p>
-                </div>
+              <div class="col-3 icon">
+                <img src="" alt="" class="icon" id="icon" />
               </div>
             </div>
           </div>
+          <small>
+            <a
+              href="https://github.com/Aimecita1/Vanilla-Weather-App"
+              target="_blank"
+              class="githubLink"
+              >Open-source code</a
+            >
+            by Aimée Romero
+          </small>
         </div>
-        <small>
-          <a
-            href="https://github.com/Aimecita1/Vanilla-Weather-App"
-            target="_blank"
-            class="githubLink"
-            >Open-source code</a
-          >
-          by Aimée Romero
-        </small>
       </div>
       <script src="src/app.js"></script>
     </body>
