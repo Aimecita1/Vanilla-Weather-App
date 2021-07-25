@@ -109,12 +109,9 @@ small {
 .githubLink {
   color: #385170;
 }
-.weather-forecast-card {
+.weather-forecast {
   margin: 20px;
-  margin-bottom: 25px;
   text-align: center;
-  background-color: #f0fbf3;
-  border-radius: 20px;
   color: #385170;
 }
 
