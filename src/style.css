@@ -109,3 +109,15 @@ small {
 .githubLink {
   color: #385170;
 }
+.weather-forecast-card {
+  margin: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #f0fbf3;
+  border-radius: 20px;
+  color: #385170;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}
