@@ -83,24 +83,10 @@ ul {
   top: -10px;
   width: 200px;
 }
-
-.celsius {
-  cursor: default;
-  text-decoration: none;
-  color: darkcyan;
-}
 .fahrenheit {
   cursor: default;
   text-decoration: none;
   color: darkcyan;
-}
-
-.active {
-  cursor: default;
-  text-decoration: none;
-  color: darkcyan;
-  font-weight: bold;
-  font-size: 22px;
 }
 
 small {

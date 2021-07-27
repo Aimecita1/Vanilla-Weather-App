@@ -1,4 +1,4 @@
-function formatDate(timestamp) {
+function formatDateAMPM(timestamp) {
   let date = new Date(timestamp);
   let days = [
     "Sunday",
@@ -11,14 +11,14 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
   let hour = date.getHours();
-  if (hour <= 9) {
-    hour = "0" + hour;
-  }
+  let ampm = hour >= 12 ? "PM" : "AM  ";
+  hour = hour % 12;
+  hour = hour ? hour : 12;
   let minutes = date.getMinutes();
   if (minutes <= 9) {
     minutes = "0" + minutes;
   }
-  return `${day} ${hour}:${minutes}`;
+  return `${day} ${hour}:${minutes} ${ampm}`;
 }
 
 function formatDay(timestamp) {
@@ -95,7 +95,7 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   console.log(response.data.wind);
-  document.querySelector("#date").innerHTML = formatDate(
+  document.querySelector("#date").innerHTML = formatDateAMPM(
     response.data.dt * 1000
   );
   document
