@@ -64,14 +64,14 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let units = "metric";
+  let units = "imperial";
   let apiKey = "98980a45697353d2d771a3c81708573c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function search(city) {
-  let units = "metric";
+  let units = "imperial";
   let apiKey = "98980a45697353d2d771a3c81708573c";
   let weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}`;
   axios.get(`${weatherURL}&appid=${apiKey}`).then(showTemperature);
@@ -94,6 +94,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  console.log(response.data.wind);
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
@@ -106,38 +107,22 @@ function showTemperature(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
-  celsiusTemperature = response.data.main.temp;
+  fahrenheitTemperature = response.data.main.temp;
 
   getForecast(response.data.coord);
 }
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   document.querySelector("#temperature").innerHTML = Math.round(
     fahrenheitTemperature
   );
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
 }
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML =
-    Math.round(celsiusTemperature);
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-let searchCity = document.querySelector("#city-form");
-searchCity.addEventListener("submit", isCity);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let celsiusTemperature = null;
+let searchCity = document.querySelector("#city-form");
+searchCity.addEventListener("submit", isCity);
 
 search("Ponce");
