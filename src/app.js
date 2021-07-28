@@ -112,16 +112,6 @@ function showTemperature(response) {
   getForecast(response.data.coord);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  document.querySelector("#temperature").innerHTML = Math.round(
-    fahrenheitTemperature
-  );
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
 let searchCity = document.querySelector("#city-form");
 searchCity.addEventListener("submit", isCity);
 
