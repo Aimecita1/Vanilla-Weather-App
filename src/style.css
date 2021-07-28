@@ -1,13 +1,11 @@
 .weather-app-wrapper {
   max-width: 950px;
   margin: 60px auto;
+  margin-bottom: 10px;
 }
 
 .weather-app {
   border-style: solid;
-  border-width: 3px;
-  border-left-width: 3px;
-  border-right-width: 3px;
   border-color: #016a87;
 }
 
@@ -63,12 +61,10 @@ ul {
   font-size: 25px;
 }
 .temperature-number {
-  color: darkcyan;
   font-size: 80px;
 }
 .temperature {
   color: darkcyan;
-  padding-top: 0;
 }
 
 .units {
@@ -83,17 +79,11 @@ ul {
   top: -10px;
   width: 200px;
 }
-.fahrenheit {
-  cursor: default;
-  text-decoration: none;
-  color: darkcyan;
-}
 
-small {
-  margin-top: 100px;
-}
 .githubLink {
   color: #385170;
+  margin-left: 175px;
+  margin-top: 0;
 }
 .weather-forecast {
   margin: 20px;

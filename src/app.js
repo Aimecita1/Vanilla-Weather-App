@@ -1,5 +1,5 @@
-function formatDateAMPM(timestamp) {
-  let date = new Date(timestamp);
+function formatDateAMPM(time) {
+  let date = new Date(time);
   let days = [
     "Sunday",
     "Monday",
