@@ -94,7 +94,7 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  console.log(response.data.wind);
+
   document.querySelector("#date").innerHTML = formatDateAMPM(
     response.data.dt * 1000
   );
